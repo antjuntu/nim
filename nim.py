@@ -157,7 +157,7 @@ class NimAI():
         # choose best actions
         q_max = -math.inf
         action_max = None
-        for action in actions():
+        for action in actions:
             q_val = self.q.get((tuple(state), action), 0)
             if q_val > q_max:
                 q_max = q_val
